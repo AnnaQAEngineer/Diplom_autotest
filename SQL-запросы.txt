@@ -2,11 +2,6 @@
 Представь: тебе нужно проверить, отображается ли созданный заказ в базе данных.
 Для этого: выведи список логинов курьеров с количеством их заказов в статусе «В доставке» (поле inDelivery = true). 
 
-C:\Users\anya_>ssh 3016bc6f-7025-4cab-8162-bd4728c34781@serverhub.praktikum-services.ru -p4554
-morty@6219991e16a0:~$ psql -U morty -d scooter_rent
-Password for user morty:
-
-
 SELECT c.login AS "Логин курьера",COUNT(o.id) AS "Количество заказов в доставке"
 FROM "Couriers" AS c
 JOIN "Orders" AS o ON c.id = o."courierId"
