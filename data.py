@@ -16,6 +16,3 @@ order_body = {
     ]
 }
 
-params_track = {
-    "t": ""
-}
